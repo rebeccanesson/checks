@@ -20,5 +20,5 @@ class Largest(Checks):
 	@check("compiles")
 	def test_negative(self): 
 		"""-10 -5 -30 -20 -60 -100 produces -5"""
-		self.spawn("./largest").stdin("-10").stdin("-5").stdin("-30").stdin("-20").stdin("-100").stdout("Largest: -5\n", "Largest: -5\n").exit(0)
+		self.spawn("./largest").stdin("-10").stdin("-5").stdin("-30").stdin("-20").stdin("-60").stdin("-100").stdout("Largest: -5\n", "Largest: -5\n").exit(0)
 
