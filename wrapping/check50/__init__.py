@@ -15,7 +15,7 @@ class Wrapping(Checks):
 	@check("compiles")
 	def test_7_5_2(self):
 		"""7, 5, 2 produces 15 x 11"""
-		self.spawn("./wrapping").stdin("7").stdin("5").stdin("2").stdout("Length: 15\.000000 Width: 11\.000000\n", "Length: 15.000000 Height: 11.000000\n").exit(0)
+		self.spawn("./wrapping").stdin("7").stdin("5").stdin("2").stdout("Length: 15\.000000 Width: 11\.000000\n", "Length: 15.000000 Width: 11.000000\n").exit(0)
 
 	@check("compiles")
 	def test_float_sides(self): 
