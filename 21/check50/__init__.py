@@ -15,7 +15,7 @@ class TwentyOne(Checks):
 	@check("compiles")
 	def test_123456(self):
 		"""123456 produces 21"""
-		self.spawn("./21").stdin("1").stdin("2").stdin("3").stdin("4").stdin("5").stdout("Sum: 21\n", "Sum: 21\n").exit(0)
+		self.spawn("./21").stdin("1").stdin("2").stdin("3").stdin("4").stdin("5").stdin("6").stdout("Sum: 21\n", "Sum: 21\n").exit(0)
 
 	@check("compiles")
 	def test_55555(self): 
