@@ -18,7 +18,7 @@ class Pythagoras(Checks):
 		self.spawn("./pythagoras").stdin("3").stdin("4").stdout("5.000000\n", "5.000000\n").exit(0)
 
 	@check("compiles")
-	def test_3.6_7.2(self): 
+	def test_float_sides(self): 
 		"""sides 3.6 and 7.2 produce hypotenuse 8.049845"""
 		self.spawn("./pythagoras").stdin("3.6").stdin("7.2").stdout("8.049845\n", "8.049845\n").exit(0)
 
