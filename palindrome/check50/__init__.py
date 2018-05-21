@@ -24,5 +24,5 @@ class Palindrome(Checks):
 
 	@check("compiles")
 	def test_poop(self): 
-		"""poop is not a palindrome"""
+		"""poop is a palindrome"""
 		self.spawn("./palindrome").stdin("poop").stdout("YES!\n", "YES!\n").exit(0)
