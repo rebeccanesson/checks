@@ -22,3 +22,13 @@ class Xish(Checks):
 		"""troll is not elfish"""
 		self.spawn("./xish").stdin("elf").stdin("troll").stdout("NO\n", "NO\n").exit(0)
 
+	@check("compiles")
+	def test_carrot(self):
+		"""carrot is cattish"""
+		self.spawn("./xish").stdin("cat").stdin("carrot").stdout("YES!\n", "YES!\n").exit(0)
+	
+	@check("compiles")
+	def test_card(self):
+		"""card is not cattish"""
+		self.spawn("./xish").std("cat").stdin("card").stdout("NO\n", "NO\n").exit(0)
+
