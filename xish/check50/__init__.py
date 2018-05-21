@@ -37,7 +37,4 @@ class Xish(Checks):
 		"""Dan is a dandy"""
 		self.spawn("./xish").stdin("Dan").stdin("dandy").stdout("YES!\n", "YES!\n").exit(0)
 	
-	@check("compiles")
-	def test_card(self):
-		"""Doug is doggish"""
-		self.spawn("./xish").stdin("dog").stdin("Doug").stdout("YES!\n", "YES!\n").exit(0)
+
