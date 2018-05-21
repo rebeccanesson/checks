@@ -22,7 +22,7 @@ class Palindrome(Checks):
 		"""Clunker is not a palindrome"""
 		self.spawn("./palindrome").stdin("Clunker").stdout("NO\n", "NO\n").exit(0)
 
-        @check("compiles")
-        def test_poop(self):
-                """poop is a palindrome"""
-                self.spawn("./palindrome").stdin("poop").stdout("YES!\n", "YES!\n").exit(0)
+	@check("compiles")
+	def test_poop(self): 
+		"""poop is not a palindrome"""
+		self.spawn("./palindrome").stdin("poop").stdout("YES!\n", "YES!\n").exit(0)
