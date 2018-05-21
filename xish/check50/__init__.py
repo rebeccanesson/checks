@@ -15,7 +15,7 @@ class Xish(Checks):
 	@check("compiles")
 	def test_elf(self):
 		"""elf is elfish"""
-		self.spawn("./xish").stdin("elf").stdin("elf).stdout("YES!\n", "YES!\n").exit(0)
+		self.spawn("./xish").stdin("elf").stdin("elf").stdout("YES!\n", "YES!\n").exit(0)
 	
 	@check("compiles")
 	def test_troll(self):
