@@ -30,5 +30,5 @@ class Detector(Checks):
 	@check("compiles")
 	def test_foo(self):
 		"""that is a lot of foo"""
-		self.spawn("./detector").stdin("FOOBAR").stdin("Wow, that is a lot of foo!").stdout("YES!\n", "YES!\n").exit(0)
+		self.spawn("./detector").stdin("FOOBAR").stdin("Wow, that is a lot of foo!").stdout("NO\n", "NO\n").exit(0)
 
