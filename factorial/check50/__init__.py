@@ -20,5 +20,5 @@ class Factorial(Checks):
 	@check("compiles")
 	def test_large_result(self): 
 		"""no overflow on large input"""
-		self.spawn("./fact").stdin("20").stdout("Fact: 2432902008176640000\n", "Fact: 2432902008176640000\n").exit(0)
+		self.spawn("./fact").stdin("19").stdout("Fact: 2432902008176640000\n", "Fact: 2432902008176640000\n").exit(0)
 
