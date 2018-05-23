@@ -15,5 +15,5 @@ class TicTacToe(Checks):
 	@check("compiles")
 	def test_X_wins(self):
 		"""X wins"""
-    		self.spawn("./tictactoe").stdin("1").stdin("1").stdin("0").stdin("0").stdin("2").stdin("2").stdin("1").stdin("0").stdin("0").stdin("1").stdin("2").stdin("0").stdout("\nPlayer X wins!!\n", "\nPlayer X wins!!\n").exit(0)
+		self.spawn("./tictactoe").stdin("1").stdin("1").stdin("0").stdin("0").stdin("2").stdin("2").stdin("1").stdin("0").stdin("0").stdin("1").stdin("2").stdin("0").stdout("\nPlayer X wins!!\n", "\nPlayer X wins!!\n").exit(0)
 
