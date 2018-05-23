@@ -17,3 +17,7 @@ class TicTacToe(Checks):
 		"""X wins"""
 		self.spawn("./tictactoe").stdin("1").stdin("1").stdin("0").stdin("0").stdin("2").stdin("2").stdin("1").stdin("0").stdin("0").stdin("1").stdin("2").stdin("0").stdout("\nPlayer X wins!!\n", "\nPlayer X wins!!\n").exit(0)
 
+	@check("compiles")
+	def test_draw(self):
+		"""draw with illegal move"""
+		self.spawn("./tictactoe").stdin("1").stdin("1").stdin("0").stdin("0").stdin("0").stdin("2").stdin("1").stdin("1").stdin("2").stdin("0").stdin("1").stdin("0").stdin("1").stdin("2").stdin("0").stdin("1").stdin("2").stdin("1").stdin("2").stdin("2").stdout("\nIt's a draw!\n", "\nIt's a draw!\n").exit(0)
